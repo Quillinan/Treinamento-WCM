@@ -1,0 +1,77 @@
+
+<#import "/wcm.ftl" as wcm/>
+ 
+<#-- Variaveis globais para os layouts -->
+<#import "/layout-globals.ftl" as globals />
+ 
+<#if pageRender.isPreviewMode() = true>
+    <@wcm.previewPageAlert />
+    <@wcm.deviceTogglePreview />
+</#if>
+ 
+<div class="wcm-wrapper-content ${wcmLayoutEditClass!""} ${pageAuthTypeClass!""}">
+ 
+    <#if pageRender.isEditMode() = false>
+        <@wcm.header authenticated=pageRender.isUserLogged()?c />
+        <@wcm.menu />
+    </#if>
+ 
+    <div class="wcm-all-content">
+ 
+        <div id="wcm-content" class="clearfix wcm-background">
+ 
+            <#if pageRender.isEditMode()=true>
+                <@wcm.editHeader />
+                <@wcm.widgetsList />
+            </#if>
+ 
+            <div id="${divMasterId!""}">
+ 
+                <div class="fluig-style-guide">
+                
+                	<div class="container">
+					    <div class="jumbotron">
+					        <h1>${i18n.getTranslation('title')}</h1>
+					        <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
+					    </div>
+					</div>
+
+            
+                	<!-- Slot 1 -->
+	                <div class="container">
+	                	<div class="row">
+	                	
+	                		<div class="col-xs-6- col-lg-4">
+	                			<h2>${i18n.getTranslation ('content')} 1</h2>
+			                	<div class="editable-slot slotfull layout-1-1" id="slotFull1">
+			                    	<@wcm.renderSlot id="SlotA" editableSlot="true" decorator="false" isResponsiveSlot="true" />
+			                	</div>
+	                		</div>
+	                		
+	                		<div class="col-xs-6- col-lg-4">
+	                			<h2>${i18n.getTranslation ('content')} 2</h2>
+			                	<div class="editable-slot slotfull layout-1-1" id="slotFull2">
+			                    	<@wcm.renderSlot id="SlotB" editableSlot="true" decorator="false" isResponsiveSlot="true" />
+			                	</div>
+	                		</div>
+	                		
+	                		<div class="col-xs-6- col-lg-4">
+	                			<h2>${i18n.getTranslation ('content')} 3</h2>
+			                	<div class="editable-slot slotfull layout-1-1" id="slotFull3">
+			                    	<@wcm.renderSlot id="SlotC" editableSlot="false" decorator="false" isResponsiveSlot="true" />
+			                	</div>
+	                		</div>
+	                		
+	                	</div>
+	                </div>
+                </div>
+ 
+                <#if fluigThemeCode != "responsive_theme">
+                    <@wcm.footer layoutuserlabel="wcm.layoutdefault.user" />
+                </#if>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
