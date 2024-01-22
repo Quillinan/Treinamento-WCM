@@ -1,6 +1,6 @@
 # Projeto de Treinamento WC - Fluig Academy
 
-O objetivo principal deste treinamento é desenvolver habilidades práticas na criação de conteúdo web dinâmico e responsivo. Durante o curso, aprendi a utilizar as seguintes tecnologias:
+O objetivo principal deste treinamento é desenvolver habilidades práticas na criação de conteúdo web dinâmico e responsivo. Durante o curso, aprendi a utilizei as seguintes tecnologias:
 
 - **HTML:** Desenvolvimento da estrutura básica de páginas web.
 - **JavaScript:** Implementação de interatividade e dinamismo na interface do usuário.
