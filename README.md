@@ -1,4 +1,4 @@
-# Projeto de Treinamento WC - Fluig Academy
+# Projeto de Treinamento WCM - Fluig Academy
 
 O objetivo principal deste treinamento é desenvolver habilidades práticas na criação de conteúdo web dinâmico e responsivo. Durante o curso, aprendi a utilizei as seguintes tecnologias:
 
