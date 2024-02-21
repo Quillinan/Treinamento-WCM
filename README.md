@@ -10,5 +10,9 @@ O objetivo principal deste treinamento é desenvolver habilidades práticas na c
 
 ## Estrutura do Projeto
 
-- `default-old-layout`: Representa o layout padrão nas versões antigas.
+- `default-old-layout`: Representa o layout padrão na versão antiga.
+- `custom old layout`: Um layout customizado baseado na versão antiga.
 - `custom-new-layout`: Um layout customizado baseado na versão moderna.
+- `api rest widget`: Um layout padrão para a construção de widgets.
+- `dataset`: Um layout customizado baseado na versão moderna.
+- `form almoco`: Um formulario customizado para enquete do almoço, obtendo dados do dataset
