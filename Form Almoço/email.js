@@ -1,8 +1,8 @@
 // Função para enviar e-mail
 function enviarEmail() {
-    var emailAdmin = "admin@email.com";
-    var assunto = "Notificação de Novo Formulário Preenchido";
-    var corpoEmail = "Um novo formulário foi preenchido";
+    var emailAdmin = "milton.quillinan1798@gmail.com";
+    var assunto = "Notificação de Novo Formulário em andamento";
+    var corpoEmail = "Um novo formulário está sendo preenchido";
 
     var parametros = {
         "subject": assunto,
@@ -10,9 +10,11 @@ function enviarEmail() {
         "model": {
             "mensagem": corpoEmail
         },
-        "to": [emailAdmin]
+        "to": "Milton Quillinan"
     };
 
     var emailService = fluigAPI.getAuthorizeService().getEndpoint("email");
     var response = emailService.post(JSON.stringify(parametros));
 }
+
+
