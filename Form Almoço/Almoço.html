@@ -29,32 +29,37 @@
   <body>
     <div class="fluig-style-guide">
       <form name="form" role="form">
-        <div class="panel" style="background-color: #ff6400; color: #fff">
-          <div class="panel-heading">
+        <div class="panel" 
+        style="background-color: #ff6400; border: solid #ff6400; color: #fff">
+          <div class="panel-heading" style="color: #fff">
             <i
               class="flaticon flaticon-restaurant-menu icon-md"
               aria-hidden="true"
             ></i>
             Enquete do almoço
           </div>
-          <div class="panel-body">
-            <div class="row">
+          <div class="panel-body" style="background-color: #fff; color: #ff6400">
+          
+          	<div class="row">
               <div class="form-group col-md-6">
-                <i
-                  class="fluigicon fluigicon-user icon-md"
-                  aria-hidden="true"
-                ></i>
-                <label for="cpf">Nome</label>
+                <i class="fluigicon fluigicon-user icon-md" aria-hidden="true"></i>
+                <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" class="form-control" />
               </div>
             </div>
+            
             <div class="row">
               <div class="form-group col-md-6">
-                <i
-                  class="flaticon flaticon-restaurant icon-md"
-                  aria-hidden="true"
-                ></i>
-                <label for="nascimento">Restaurante</label>
+                <i class="flaticon flaticon-email icon-md" aria-hidden="true"></i>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" />
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="form-group col-md-6">
+                <i class="flaticon flaticon-restaurant icon-md" aria-hidden="true"></i>
+                <label for="restaurante">Restaurante</label>
                 <select
                   name="restaurante"
                   id="restaurante"
@@ -66,6 +71,7 @@
                 ></select>
               </div>
             </div>
+            
           </div>
         </div>
       </form>
@@ -81,6 +87,8 @@
     </div>
   </body>
   
-  <script type="text/javascript" src="grafico.js"></script>
+	 
+ 
+	<script type="text/javascript" src="grafico.js"></script>
 
 </html>
