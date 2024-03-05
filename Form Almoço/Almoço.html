@@ -3,25 +3,20 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="/style-guide/css/fluig-style-guide.min.css"
-    />
+      href="/style-guide/css/fluig-style-guide.min.css" />
     <script
       type="text/javascript"
-      src="/portal/resources/js/jquery/jquery.js"
-    ></script>
+      src="/portal/resources/js/jquery/jquery.js"></script>
     <script
       type="text/javascript"
-      src="/portal/resources/js/jquery/jquery-ui.min.js"
-    ></script>
+      src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
     <script
       type="text/javascript"
-      src="/portal/resources/js/mustache/mustache-min.js"
-    ></script>
+      src="/portal/resources/js/mustache/mustache-min.js"></script>
     <script
       type="text/javascript"
       src="/style-guide/js/fluig-style-guide.min.js"
-      charset="utf-8"
-    ></script>
+      charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/webdesk/vcXMLRPC.js"></script>
   </head>
@@ -29,36 +24,47 @@
   <body>
     <div class="fluig-style-guide">
       <form name="form" role="form">
-        <div class="panel" 
-        style="background-color: #ff6400; border: solid #ff6400; color: #fff">
+        <div
+          class="panel"
+          style="background-color: #ff6400; border: solid #ff6400; color: #fff">
           <div class="panel-heading" style="color: #fff">
             <i
               class="flaticon flaticon-restaurant-menu icon-md"
-              aria-hidden="true"
-            ></i>
-            Enquete do almoÁo
+              aria-hidden="true"></i>
+            Enquete do almo√ßo
           </div>
-          <div class="panel-body" style="background-color: #fff; color: #ff6400">
-          
-          	<div class="row">
+          <div
+            class="panel-body"
+            style="background-color: #fff; color: #ff6400">
+            <div class="row">
               <div class="form-group col-md-6">
-                <i class="fluigicon fluigicon-user icon-md" aria-hidden="true"></i>
+                <i
+                  class="fluigicon fluigicon-user icon-md"
+                  aria-hidden="true"></i>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" class="form-control" />
               </div>
             </div>
-            
+
             <div class="row">
               <div class="form-group col-md-6">
-                <i class="flaticon flaticon-email icon-md" aria-hidden="true"></i>
+                <i
+                  class="flaticon flaticon-email icon-md"
+                  aria-hidden="true"></i>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control" />
               </div>
             </div>
-            
+
             <div class="row">
               <div class="form-group col-md-6">
-                <i class="flaticon flaticon-restaurant icon-md" aria-hidden="true"></i>
+                <i
+                  class="flaticon flaticon-restaurant icon-md"
+                  aria-hidden="true"></i>
                 <label for="restaurante">Restaurante</label>
                 <select
                   name="restaurante"
@@ -67,18 +73,16 @@
                   dataset="DS_Restaurantes"
                   datasetkey="NOMEFANTASIA"
                   datasetvalue="NOMEFANTASIA"
-                  addBlankLine="true"
-                ></select>
+                  addBlankLine="true"></select>
               </div>
             </div>
-            
           </div>
         </div>
       </form>
 
       <div class="container">
         <div class="row">
-          <p>Resultado atÈ o momento:</p>
+          <p>Resultado at√© o momento:</p>
         </div>
         <div class="row" id="info">
           <canvas id="chart"></canvas>
@@ -86,9 +90,6 @@
       </div>
     </div>
   </body>
-  
-	 
- 
-	<script type="text/javascript" src="grafico.js"></script>
 
+  <script type="text/javascript" src="grafico.js"></script>
 </html>

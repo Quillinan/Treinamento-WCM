@@ -1,4 +1,3 @@
-
 //Definir dataset como uma variável global
 var dataset;
 
@@ -48,7 +47,7 @@ function inicializarGrafico() {
   ) {
     // Destruir o gráfico anterior se existir
     if (Grafico) {
-    	Grafico.destroy();
+      Grafico.destroy();
     }
 
     // Criar um novo gráfico
